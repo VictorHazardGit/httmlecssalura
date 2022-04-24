@@ -1,0 +1,54 @@
+<!-- Define qual versão do HTML usaremos - No caso, HTML 5 -->
+<!DOCTYPE html> 
+<!-- A tag <html> define qual o escopo a ser renderizado e o atributo lang define qual a linguagem da página -->
+<html lang="pt-br"> 
+<!-- As informaçoes que são passadas ao navegador ficam dentro da tag head -->    
+    <head> 
+        <!-- Passando as informações de enconding para a página -->
+        <meta charset="UTF-8"> 
+        <title>Barbearia ALura</title>
+
+        <!-- tag style aplica as configurações a várias tags - 2 forma para add CSS ao HTML -->
+        <style>
+            p{
+                text-align:center 
+            }
+
+        </style>
+
+    <!-- referencia a um arquivo externo - 3 forma para add CSS ao HTML -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <!-- O conteúdo da página fica dentro da tag body -->
+    <body> 
+            <header>
+                <h1 class="titulo-principal">Barbearia Alura</h1>
+            </header>
+
+        <img id="banner" src="banner.jpg">
+            <div class="principal">
+                <!-- CSS Inline - 1 primeira forma pra add CSS ao HTML -->
+                <h2 style="text-align:center">Sobre a Barbearia Alura</h2>
+                <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu
+                cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.
+                </p>
+
+                <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+
+                <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de
+                excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+            </div>
+
+            <div class="beneficios">
+                <h3 id="tituloBeneficios">Beneficios</h3>
+                    <ul>
+                        <li class="itens">Atendimento ao cliente</li>
+                        <li class="itens">Espaço diferenciado</li>
+                        <li class="itens">Localização</li>
+                        <li class="itens">Profissionais dedicados</li>
+                    </ul>
+
+                    <img src="beneficios.jpg" class="imagembeneficios">
+            </div>           
+    </body>    
+</html>
